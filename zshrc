@@ -118,6 +118,7 @@ export LD_LIBRARY_PATH=$LIBRARY_PATH:/home/thesalmar/.libs/GLEW-1.10.0/lib
 export CPATH=$CPATH:/home/thesalmar/.libs/GLEW-1.10.0/include
 export PATH="$PATH:/sbin"
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:~/local/bin
+export GOPATH=/home/thesalmar
 
 # Aliases
 
@@ -127,7 +128,7 @@ alias l='ls -CF'
 alias ne='emacs -nw'
 alias emacs='emacs -nw'
 alias clean='rm -f *~ | rm -f \#*\#'
-alias clean_nazi='make clean && clean && clear'
+alias cleann='make clean && clean && clear'
 alias ralias='source ~/.zshrc'
 alias myalias='emacs ~/.zshrc'
 alias down='sudo shutdown -P now'
@@ -150,5 +151,6 @@ alias redhawk='php ~/repos/RED_HAWK/rhawk.php'
 alias zboob='echo "Zboob !"'
 alias pusho='git push origin master'
 alias pull= 'git pull'
+alias brew='~/repos/homebrew/bin/brew'
 
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
