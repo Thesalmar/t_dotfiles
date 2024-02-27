@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/thesalmar/.oh-my-zsh
+  export ZSH=/home/comel/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -96,61 +96,18 @@ fi
 
 FULLNAME=`cat /etc/passwd | grep $USER | cut -d ':' -f 5 | cut -d ',' -f 1`
 
-# Exports and y'all
-
-export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/lib
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
-export CPATH=$CPATH:/usr/local/include
-export CGP_INSTALL_DIR=$CGP_INSTALL_DIR:/usr/local
-export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
-export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"
-export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
-export PATH="/home/linuxbrew/.linuxbrew/opt/berkeley-db@4/bin:$PATH"
-export PATH="/home/linuxbrew/.linuxbrew/opt/python/libexec/bin:$PATH"
-export LIBRARY_PATH=$LIBRARY_PATH:/home/thesalmar/.libs/CSFML-2.2/lib
-export LD_LIBRARY_PATH=$LIBRARY_PATH:/home/thesalmar/.libs/CSFML-2.2/lib
-export CPATH=$CPATH:/home/thesalmar/.libs/CSFML-2.2/include
-export LIBRARY_PATH=$LIBRARY_PATH:/home/thesalmar/.libs/SFML-2.2/lib
-export LD_LIBRARY_PATH=$LIBRARY_PATH:/home/thesalmar/.libs/SFML-2.2/lib
-export CPATH=$CPATH:/home/thesalmar/.libs/SFML-2.2/include
-export LIBRARY_PATH=$LIBRARY_PATH:/home/thesalmar/.libs/GLEW-1.10.0/lib
-export LD_LIBRARY_PATH=$LIBRARY_PATH:/home/thesalmar/.libs/GLEW-1.10.0/lib
-export CPATH=$CPATH:/home/thesalmar/.libs/GLEW-1.10.0/include
-export PATH="$PATH:/sbin"
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:~/local/bin
-export GOPATH=/home/thesalmar
-
 # Aliases
 
 alias ll='ls -alF'
 alias la='ls -lA'
 alias l='ls -CF'
-alias ne='emacs -nw'
 alias emacs='emacs -nw'
 alias clean='rm -f *~ | rm -f \#*\#'
 alias cleann='make clean && clean && clear'
-alias ralias='source ~/.zshrc'
-alias myalias='emacs ~/.zshrc'
 alias down='sudo shutdown -P now'
-alias reboot='sudo reboot'
+alias rbt='sudo reboot'
+alias newkey='ssh-keygen -t ed25519 -C "replacedummy@ilikepasta.com"'
 alias j='jobs'
 alias reload='. ${HOME}/.zshrc'
-alias lock='xscreensaver-command -lock'
-alias xresources_reload='xrdb -merge ~/.Xresources'
-alias fs='fortune -s'
-alias mapscii='telnet mapscii.me'
-alias norme="/home/thesalmar/norminette/norminette"
-alias norme_update="/home/thesalmar/norminette/update.sh"
-alias norme_debug="/home/thesalmar/norminette/debug.sh"
-alias theme='gnome-tweak-tool'
-alias fix_screen='xrandr -o 0'
-alias blih='blih -u come.lemargue@epitech.eu'
-alias ns_auth='ns_auth -u come.lemargue@epitech.eu'
-alias fluxion='sudo fluxion'
-alias redhawk='php ~/repos/RED_HAWK/rhawk.php'
-alias zboob='echo "Zboob !"'
 alias pusho='git push origin master'
 alias pull= 'git pull'
-alias brew='~/repos/homebrew/bin/brew'
-
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
